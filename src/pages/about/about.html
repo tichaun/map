@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      地图
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="map">
+	<button ion-button (click)="demoBaiduMap()">显示地图</button>
+	<button ion-button (click)="dingwei()">gps定位</button>
+	<button ion-button (click)="zhuan()">坐标转换</button>
+	<div #container id="container" style="width: 100%;height: 450px;"></div>
+</ion-content>
+<!-- <ion-content class="map">
+  <div #container id="container" class="mapContainer"></div>
+</ion-content> -->
