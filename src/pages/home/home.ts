@@ -2,6 +2,7 @@ import { Component ,ApplicationRef} from '@angular/core';
 import { AlertController, App, Platform, Events } from 'ionic-angular';
 import { CodePush, SyncStatus, InstallMode, DownloadProgress } from 'ionic-native';
 import { NavController } from 'ionic-angular';
+import { Map } from '../map/map';
 
 @Component({
   selector: 'page-home',
@@ -18,6 +19,9 @@ export class HomePage {
 		        public events : Events,
 		        public navCtrl : NavController) {
 
+  }
+  dingwei(){
+      this.navCtrl.push(Map);
   }
    checkForUpdate() {
         this.platform.ready().then(() => {
